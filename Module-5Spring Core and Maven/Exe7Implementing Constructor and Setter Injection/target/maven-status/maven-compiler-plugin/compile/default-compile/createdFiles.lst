@@ -1,0 +1,6 @@
+com\example\injection\InMemoryLibraryRepository.class
+com\example\injection\SetterInjectedService.class
+com\example\injection\ConstructorInjectedService.class
+com\example\injection\InjectionApplication.class
+com\example\injection\AppConfig.class
+com\example\injection\LibraryRepository.class

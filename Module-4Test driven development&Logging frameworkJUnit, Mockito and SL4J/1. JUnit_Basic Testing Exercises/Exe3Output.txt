@@ -1,0 +1,4 @@
+testAssertions() PASSED
+
+Tests run: 1
+Failures: 0

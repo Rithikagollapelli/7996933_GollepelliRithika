@@ -1,0 +1,46 @@
+
+mvn -f "Exe8 Implementing Basic AOP with Spring/pom.xml" -DskipTests package
+mvn -f "Exe8 Implementing Basic AOP with Spring/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe8 Implementing Basic AOP with Spring/target/dependency"
+cmd /c java -cp "Exe8 Implementing Basic AOP with Spring/target/classes;Exe8 Implementing Basic AOP with Spring/Exe8 Implementing Basic AOP with Spring/target/dependency/*" com.example.aop.AopApplication
+
+
+
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>mvn -f "Exe8 Implementing Basic AOP with Spring/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe8 Implementing Basic AOP with Spring/target/dependency"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:exe8-aop-app >----------------------
+[INFO] Building exe8-aop-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:copy-dependencies (default-cli) @ exe8-aop-app ---
+[INFO] org.springframework:spring-context:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-beans:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-core:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-jcl:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-expression:jar:6.1.6 already exists in destination.
+[INFO] io.micrometer:micrometer-observation:jar:1.12.5 already exists in destination.
+[INFO] io.micrometer:micrometer-commons:jar:1.12.5 already exists in destination.
+[INFO] org.springframework:spring-aop:jar:6.1.6 already exists in destination.
+[INFO] org.aspectj:aspectjweaver:jar:1.9.19 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.398 s
+[INFO] Finished at: 2026-07-01T10:59:57+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>cmd /c java -cp "Exe8 Implementing Basic AOP with Spring/target/classes;Exe8 Implementing Basic AOP with Spring/Exe8 Implementing Basic AOP with Spring/target/dependency/*" com.example.aop.AopApplication
+[AOP] Before method execution
+[AOP] LibraryService.addBook(..) executed in 2 ms
+[AOP] Before method execution
+[AOP] LibraryService.addBook(..) executed in 0 ms
+Books in library:
+[AOP] Before method execution
+[AOP] After returning from getBooks(), result size=2
+[AOP] LibraryService.getBooks() executed in 1 ms
+AOP Patterns
+Cross-cutting Concerns
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>

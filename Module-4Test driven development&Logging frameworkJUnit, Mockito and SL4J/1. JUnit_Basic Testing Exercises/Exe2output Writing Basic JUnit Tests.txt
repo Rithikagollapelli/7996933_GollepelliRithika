@@ -1,0 +1,6 @@
+testAdd()       PASSED
+testSubtract()  PASSED
+testMultiply()  PASSED
+
+Tests run: 3
+Failures: 0n

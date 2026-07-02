@@ -1,0 +1,7 @@
+Setup executed
+Teardown executed
+
+testAdd() PASSED
+
+Tests run: 1
+Failures: 0

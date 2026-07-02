@@ -1,0 +1,57 @@
+SELECT * FROM Customers;
+SELECT * FROM Accounts;
+SELECT * FROM Loans;
+SELECT * FROM Employees;
+DELETE FROM Transactions;
+DELETE FROM Loans;
+DELETE FROM Accounts;
+DELETE FROM Employees;
+DELETE FROM Customers;
+
+COMMIT;
+INSERT INTO Customers
+(CustomerID, Name, DOB, Balance, LastModified, IsVIP)
+VALUES
+(1,'John Doe',TO_DATE('1955-05-15','YYYY-MM-DD'),12000,SYSDATE,'N');
+
+INSERT INTO Customers
+(CustomerID, Name, DOB, Balance, LastModified, IsVIP)
+VALUES
+(2,'Jane Smith',TO_DATE('1990-07-20','YYYY-MM-DD'),15000,SYSDATE,'N');
+
+INSERT INTO Customers
+(CustomerID, Name, DOB, Balance, LastModified, IsVIP)
+VALUES
+(3,'Robert King',TO_DATE('1948-03-10','YYYY-MM-DD'),8000,SYSDATE,'N');
+
+INSERT INTO Customers
+(CustomerID, Name, DOB, Balance, LastModified, IsVIP)
+VALUES
+(4,'Mary Johnson',TO_DATE('1988-11-05','YYYY-MM-DD'),25000,SYSDATE,'N');
+INSERT INTO Accounts VALUES
+(101,1,'Savings',12000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(102,2,'Checking',15000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(103,3,'Savings',8000,SYSDATE);
+
+INSERT INTO Accounts VALUES
+(104,4,'Savings',25000,SYSDATE);
+INSERT INTO Loans VALUES
+(11,1,5000,8,SYSDATE,SYSDATE+15);
+
+INSERT INTO Loans VALUES
+(12,2,10000,7,SYSDATE,SYSDATE+90);
+
+INSERT INTO Loans VALUES
+(13,3,7000,9,SYSDATE,SYSDATE+25);
+INSERT INTO Employees VALUES
+(11,'Alice Johnson','Manager',70000,'HR',
+TO_DATE('2015-06-15','YYYY-MM-DD'));
+
+INSERT INTO Employees VALUES
+(12,'Bob Brown','Developer',60000,'IT',
+TO_DATE('2017-03-20','YYYY-MM-DD'));
+COMMIT;

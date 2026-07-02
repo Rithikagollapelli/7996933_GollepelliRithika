@@ -1,0 +1,38 @@
+mvn -f "Exe3Implementing Logging with Spring AOP/pom.xml" -DskipTests package
+mvn -f "Exe3Implementing Logging with Spring AOP/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe3Implementing Logging with Spring AOP/target/dependency"
+java -cp "Exe3Implementing Logging with Spring AOP/target/classes;Exe3Implementing Logging with Spring AOP/Exe3Implementing Logging with Spring AOP/target/dependency/*" com.example.library.LibraryApplication
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>mvn -f "Exe3Implementing Logging with Spring AOP/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe3Implementing Logging with Spring AOP/target/dependency"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:exe3-library-app >--------------------
+[INFO] Building exe3-library-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:copy-dependencies (default-cli) @ exe3-library-app ---
+[INFO] org.springframework:spring-context:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-beans:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-core:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-jcl:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-expression:jar:6.1.6 already exists in destination.
+[INFO] io.micrometer:micrometer-observation:jar:1.12.5 already exists in destination.
+[INFO] io.micrometer:micrometer-commons:jar:1.12.5 already exists in destination.
+[INFO] org.springframework:spring-aop:jar:6.1.6 already exists in destination.
+[INFO] org.aspectj:aspectjweaver:jar:1.9.19 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.478 s
+[INFO] Finished at: 2026-07-01T10:52:51+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>java -cp "Exe3Implementing Logging with Spring AOP/target/classes;Exe3Implementing Logging with Spring AOP/Exe3Implementing Logging with Spring AOP/target/dependency/*" com.example.library.LibraryApplication
+[EXE3-LOG] LibraryService.addBook(..) executed in 0.809 ms
+[EXE3-LOG] LibraryService.addBook(..) executed in 0.0069 ms
+Books in library:
+[EXE3-LOG] LibraryService.getBooks() executed in 0.13 ms
+The Hobbit
+1984
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>

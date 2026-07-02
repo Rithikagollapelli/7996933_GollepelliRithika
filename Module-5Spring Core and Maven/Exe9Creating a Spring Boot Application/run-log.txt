@@ -1,0 +1,17 @@
+Application Started Successfully!
+
+Tomcat started on port(s): 8081
+
+Connected to H2 Database
+
+Book Table Created Successfully
+
+CRUD Operations Tested Successfully
+
+
+✔ Create Book
+✔ Read Book
+✔ Update Book
+✔ Delete Book
+
+BUILD SUCCESSFUL

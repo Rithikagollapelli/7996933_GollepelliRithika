@@ -1,0 +1,35 @@
+
+cmd /c mvn -f "Exe2Implementing Dependency Injection/pom.xml" -DskipTests package
+
+cmd /c mvn -f "Exe2Implementing Dependency Injection/pom.xml" org.codehaus.mojo:exec-maven-plugin:3.1.0:java "-Dexec.mainClass=com.example.book.BookApplication
+
+PS C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven> cmd /c mvn -f "Exe1Configuring a Basic Spring Application/pom.xml" org.codehaus.mojo:exec-maven-plugin:3.1.0:java "-Dexec.mainClass=com.example.book.BookApplication"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.example:exe1-basic-spring >--------------------
+[INFO] Building exe1-basic-spring 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ exe1-basic-spring ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.pom (11 kB at 5.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom (58 kB at 149 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.1/plexus-component-annotations-2.1.1.jar (4.1 kB at 8.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar (54 kB at 85 kB/s)
+BookService: adding book -> Clean Code
+BookService: adding book -> Effective Java
+Books in library:
+BookService: fetching all books
+Clean Code
+Effective Java
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.747 s
+[INFO] Finished at: 2026-07-01T11:32:21+05:30
+[INFO] -------------------------------------------------------------------------
+PS C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven> 

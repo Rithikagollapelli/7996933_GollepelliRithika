@@ -1,0 +1,65 @@
+cmd /c mvn -f "Exe5Configuring the Spring IoC Container/pom.xml" -DskipTests package
+cmd /c mvn -f "Exe5Configuring the Spring IoC Container/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe5Configuring the Spring IoC Container/target/dependency"
+cmd /c java -cp "Exe5Configuring the Spring IoC Container/target/classes;Exe5Configuring the Spring IoC Container/Exe5Configuring the Spring IoC Container/target/dependency/*" com.example.book.BookApplication
+
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>cmd /c mvn -f "Exe5Configuring the Spring IoC Container/pom.xml" -DskipTests package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:exe5-book-app >----------------------
+[INFO] Building exe5-book-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ exe5-book-app ---
+[INFO] skip non existing resourceDirectory C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven\Exe5Configuring the Spring IoC Container\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ exe5-book-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ exe5-book-app ---
+[INFO] skip non existing resourceDirectory C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven\Exe5Configuring the Spring IoC Container\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ exe5-book-app ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ exe5-book-app ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ exe5-book-app ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.172 s
+[INFO] Finished at: 2026-07-01T10:48:29+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>cmd /c mvn -f "Exe5Configuring the Spring IoC Container/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe5Configuring the Spring IoC Container/target/dependency"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:exe5-book-app >----------------------
+[INFO] Building exe5-book-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:copy-dependencies (default-cli) @ exe5-book-app ---
+[INFO] org.springframework:spring-context:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-aop:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-beans:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-core:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-jcl:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-expression:jar:6.1.6 already exists in destination.
+[INFO] io.micrometer:micrometer-observation:jar:1.12.5 already exists in destination.
+[INFO] io.micrometer:micrometer-commons:jar:1.12.5 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.172 s
+[INFO] Finished at: 2026-07-01T10:48:32+05:30
+[INFO] ------------------------------------------------------------------------
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>cmd /c java -cp "Exe5Configuring the Spring IoC Container/target/classes;Exe5Configuring the Spring IoC Container/Exe5Configuring the Spring IoC Container/target/dependency/*" com.example.book.BookApplication
+Books in library:
+Effective Java
+Head First Design Patterns
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>

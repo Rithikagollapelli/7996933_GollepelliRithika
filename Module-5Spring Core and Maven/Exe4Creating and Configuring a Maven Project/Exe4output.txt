@@ -1,0 +1,33 @@
+mvn -f "Exe4Creating and Configuring a Maven Project/pom.xml" -DskipTests package
+mvn -f "Exe4Creating and Configuring a Maven Project/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe4Creating and Configuring a Maven Project/target/dependency"
+java -cp "Exe4Creating and Configuring a Maven Project/target/classes;Exe4Creating and Configuring a Maven Project/Exe4Creating and Configuring a Maven Project/target/dependency/*" com.example.library.LibraryApplication
+
+
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>mvn -f "Exe4Creating and Configuring a Maven Project/pom.xml" dependency:copy-dependencies -DincludeScope=runtime -DoutputDirectory="Exe4Creating and Configuring a Maven Project/target/dependency"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:exe4-library-app >--------------------
+[INFO] Building exe4-library-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:copy-dependencies (default-cli) @ exe4-library-app ---
+[INFO] org.springframework:spring-context:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-aop:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-core:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-jcl:jar:6.1.6 already exists in destination.
+[INFO] org.springframework:spring-expression:jar:6.1.6 already exists in destination.
+[INFO] io.micrometer:micrometer-observation:jar:1.12.5 already exists in destination.
+[INFO] io.micrometer:micrometer-commons:jar:1.12.5 already exists in destination.
+[INFO] org.springframework:spring-beans:jar:6.1.6 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.302 s
+[INFO] Finished at: 2026-07-01T10:51:39+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\rithi\OneDrive\Desktop\Java Deepskilling\Module-5Spring Core and Maven>java -cp "Exe4Creating and Configuring a Maven Project/target/classes;Exe4Creating and Configuring a Maven Project/Exe4Creating and Configuring a Maven Project/target/dependency/*" com.example.library.LibraryApplication
+Books in library:
+Clean Code
